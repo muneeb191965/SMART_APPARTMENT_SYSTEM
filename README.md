@@ -63,3 +63,158 @@ The resident can:
 # Core Modules
 The project is divided into separate packages for better organization and maintainability.
 ---
+## 1. Model Package (`model`)
+
+This package contains entity classes that represent real-world objects.
+
+### Classes
+- `User`
+- `Owner`
+- `Resident`
+- `Building`
+- `Apartment`
+
+### Responsibilities
+- Store object data
+- Define relationships between entities
+- Apply encapsulation using private fields and getters
+
+---
+
+## 2. Service Package (`service`)
+
+This package handles database operations and business logic.
+
+### Classes
+- `DBConnection`
+- `AuthService`
+- `ReportService`
+
+### Responsibilities
+- Database connection
+- User authentication
+- Report generation
+- SQL query execution
+
+---
+
+## 3. UI Package (`ui`)
+
+This package contains Java Swing graphical interfaces.
+
+### Classes
+- `LoginUI`
+- `OwnerDashboard`
+- `ResidentDashboard`
+
+### Responsibilities
+- User interaction
+- Forms and buttons
+- Navigation between screens
+- Displaying apartment and billing information
+
+---
+
+## 4. Main Class
+
+The application starts from:
+
+```java
+Main.java
+```
+
+This class connects the application with the database and launches the login screen.
+
+---
+
+# Key OOP Features
+
+## Encapsulation
+
+Private fields are used inside classes and accessed using getter methods.
+
+### Example
+
+```java
+private double rent;
+
+public double getRent() {
+    return rent;
+}
+```
+
+---
+
+## Inheritance
+
+`Owner` and `Resident` classes inherit from the abstract `User` class.
+
+### Example
+
+```java
+public class Owner extends User
+```
+
+---
+
+## Abstraction
+
+The `User` class is abstract and defines common behavior for all users.
+
+### Example
+
+```java
+public abstract String getRole();
+```
+
+---
+
+## Polymorphism
+
+Different classes provide different implementations of methods.
+
+### Example
+
+```java
+@Override
+public String getRole() {
+    return "Resident";
+}
+```
+
+---
+
+## Validation
+
+Validation is used to prevent invalid data.
+
+### Examples
+- Rent cannot be negative
+- Empty login fields are not allowed
+- Invalid apartment values throw exceptions
+
+### Example
+
+```java
+if(rent <= 0){
+    throw new IllegalArgumentException("Invalid Rent");
+}
+```
+
+---
+
+## Exception Handling
+
+Try-catch blocks are used to safely handle errors.
+
+### Example
+
+```java
+try {
+    pst.executeUpdate();
+} catch(Exception ex) {
+    JOptionPane.showMessageDialog(f, ex.getMessage());
+}
+```
+
+---
