@@ -8,7 +8,7 @@ Managing apartments manually can be difficult because records are often scattere
 Apartments/Flats
 Residents
 Bills and Payments
-Apartment Reports
+Apartment Report
 Users of the System
 Owner
 
