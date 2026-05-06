@@ -352,7 +352,7 @@ ApartmentManagementSystem/
 Add your GitHub repository link here:
 
 ```text
-https://github.com/your-repository-link
+https://github.com/muneeb191965/SMART_APPARTMENT_SYSTEM/blob/main/README.md
 ```
 
 ---
