@@ -218,3 +218,167 @@ try {
 ```
 
 ---
+# Database Information
+
+The project uses MySQL database.
+
+## Database Name
+
+```sql
+smartapartmentdb
+```
+
+---
+
+# Database Tables
+
+The following tables are used in the system:
+
+| Table Name | Purpose |
+|------------|----------|
+| Owner | Stores owner information |
+| Building | Stores building details |
+| Apartment | Stores apartment details |
+| Resident | Stores resident records |
+| Bill | Stores billing information |
+| Payment | Stores payment records |
+
+---
+
+# How to Run the Project
+
+## Requirements
+
+- JDK 17 or above
+- MySQL Server
+- MySQL JDBC Driver
+- Java IDE (IntelliJ IDEA, Eclipse, or VS Code)
+
+---
+
+# Step 1: Create Database
+
+```sql
+CREATE DATABASE smartapartmentdb;
+USE smartapartmentdb;
+```
+
+---
+
+# Step 2: Run SQL Script
+
+Run the provided SQL file to create all required tables.
+
+---
+
+# Step 3: Configure Database Connection
+
+Open:
+
+```java
+service/DBConnection.java
+```
+
+Update database username and password if needed:
+
+```java
+DriverManager.getConnection(
+    "jdbc:mysql://localhost:3306/smartapartmentdb",
+    "root",
+    "@@@12345"
+);
+```
+
+---
+
+# Step 4: Compile the Project
+
+```bash
+javac Main.java
+```
+
+---
+
+# Step 5: Run the Project
+
+```bash
+java Main
+```
+
+---
+
+# Project Structure
+```text
+ApartmentManagementSystem/
+│
+├── model/
+│   ├── Apartment.java
+│   ├── Building.java
+│   ├── Owner.java
+│   ├── Resident.java
+│   └── User.java
+│
+├── service/
+│   ├── AuthService.java
+│   ├── DBConnection.java
+│   └── ReportService.java
+│
+├── ui/
+│   ├── LoginUI.java
+│   ├── OwnerDashboard.java
+│   └── ResidentDashboard.java
+│
+├── Main.java
+├── apartment_management.sql
+└── README.md
+```
+
+---
+
+# Technologies Used
+
+| Technology | Purpose |
+|------------|----------|
+| Java | Core Programming |
+| Java Swing | GUI Development |
+| JDBC | Database Connectivity |
+| MySQL | Database Management |
+| OOP Concepts | Software Design |
+
+---
+
+# GitHub Repository
+
+Add your GitHub repository link here:
+
+```text
+https://github.com/your-repository-link
+```
+
+---
+
+# Video Demonstration
+Add your YouTube video link here:
+
+```text
+https://youtube.com/your-video-link
+```
+
+---
+
+# Academic Integrity
+This project is developed as part of the Semester OOP Project.  
+All code and implementation were created by the group members for educational purposes.
+
+---
+
+# Conclusion
+This project demonstrates the practical implementation of Object-Oriented Programming concepts such as:
+- Encapsulation
+- Inheritance
+- Abstraction
+- Polymorphism
+- Validation
+- Exception Handling
+
+along with Java Swing GUI development and MySQL database integration.
