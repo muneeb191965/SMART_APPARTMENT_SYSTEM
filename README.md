@@ -1,113 +1,65 @@
-# SMART_APPARTMENT_SYSTEM
-Purpose
+# Apartment Management System
 
-The Apartment Management System is a Java desktop application created to simplify apartment and resident management for property owners.
-Managing apartments manually can be difficult because records are often scattered, rent tracking becomes confusing, and resident information is hard to organize. This system solves those problems by providing a centralized platform to manage:
+## Semester OOP Project
 
-1.Buildings
-Apartments/Flats
-Residents
-Bills and Payments
-Apartment Report
-Users of the System
-Owner
+**Course:** Object-Oriented Programming (OOP)  
+**Project Type:** Semester Group Project  
+**Technology Used:** Java, Swing GUI, JDBC, MySQL  
 
-2.The owner can:
-Add buildings
-Add apartments
-Register residents
-View apartment and resident records
-Generate reports
-Resident
+---
 
-3.The resident can:
-View personal bills
-Make payments
-Core Modules
-**Packages**
-The project is divided into separate packages to keep the system organized and maintainable.
-**1. Model Package (model)**
-This package contains entity classes that represent real-world objects.
-Classes
-User
-Owner
-Resident
-Building
-Apartment
-Responsibilities
-Store object data
-Define relationships between entities
-Apply encapsulation using private fields and getters
+# Project Description
 
-**2. Service Package (service)**
-This package handles business logic and database operations.
-Classes
-DBConnection
-AuthService
-ReportService
-Responsibilities
-Database connectivity
-User authentication
-Report generation
-SQL query handling
+The Apartment Management System is a Java desktop application developed to simplify apartment and resident management for property owners and building administrators.
 
-**3. UI Package (ui)**
-This package contains all Java Swing graphical interfaces.
-Classes
-LoginUI
-OwnerDashboard
-ResidentDashboard
+Managing apartments manually can create problems such as:
+- Difficulty tracking buildings and apartments
+- Poor management of resident records
+- Billing and payment confusion
+- Time-consuming manual work
 
-**Main Class**
-The application starts from:
+This system provides a centralized solution to manage:
+- Buildings
+- Apartments
+- Residents
+- Bills
+- Payments
+- Apartment Reports
 
-Main.java
-This class connects the application with the database and opens the login screen.
-Key OOP Features
-Encapsulation:
-Private fields are used inside classes and accessed through getter methods.
-Example:
-private double rent;
-public double getRent() {
-    return rent;
-}
+The project demonstrates the practical implementation of Object-Oriented Programming concepts using Java.
 
-Inheritance:
-Owner and Resident classes inherit from the abstract User class.
-Example:
-public class Owner extends User
+---
 
-Abstraction:
-The User class is abstract and defines common behavior for all users.
-Example:
-public abstract String getRole();
+# Group Members
 
-Polymorphism:
-Different classes implement methods differently.
-Example:
-@Override
-public String getRole() {
-    return "Resident";
-}
+| Full Name | CMS/ID | Section |
+|----------|---------|----------|
+| Nadia Hassan |023-25-0083 | BSCS-D|
+| Muneeb Rahman |023-25-| BSCS-X|
 
-Validation:
-Validation is used to prevent invalid data.
-Examples:
-Rent cannot be negative
-Empty login fields are not allowed
-Invalid apartment values throw exceptions
+---
 
-Example:
-if(rent <= 0){
-    throw new IllegalArgumentException("Invalid Rent");
-}
+# Purpose of the System
 
-Exception Handling:
-Try-catch blocks are used to handle database and input errors safely.
+The purpose of this project is to automate apartment management operations and reduce manual record handling.
 
-Example:
-Responsibilities
-User interaction
-Forms and buttons
-Navigation between screens
-Displaying records and reports
+## Users of the System
+
+### Owner
+The owner can:
+- Add buildings
+- Add apartments
+- Register residents
+- View records
+- Generate reports
+
+### Resident
+The resident can:
+- View bills
+- Make payments
+
+---
+
+# Core Modules
+The project is divided into separate packages for better organization and maintainability.
+---
