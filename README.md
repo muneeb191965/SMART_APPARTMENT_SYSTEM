@@ -35,7 +35,7 @@ The project demonstrates the practical implementation of Object-Oriented Program
 | Full Name | CMS/ID | Section |
 |----------|---------|----------|
 | Nadia Hassan |023-25-0083 | BSCS-D|
-| Muneeb Rahman |023-25-| BSCS-X|
+| Muneeb ur Rahman |023-25-0075| BSCS-X|
 
 ---
 
