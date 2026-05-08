@@ -347,8 +347,7 @@ https://github.com/muneeb191965/SMART_APPARTMENT_SYSTEM/blob/main/README.md
 ---
 
 # Video Demonstration
-
-https://youtube.com/your-video-link
+https://drive.google.com/file/d/130wyg9HX8sotbQtS92eksyYUlDlAATtw/view?usp=sharing
 ```
 
 ---
