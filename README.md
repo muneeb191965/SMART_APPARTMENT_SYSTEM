@@ -33,9 +33,8 @@ The project demonstrates the practical implementation of Object-Oriented Program
 | Full Name | CMS/ID | Section |
 |----------|---------|----------|
 | Nadia Hassan |023-25-0083 | BSCS-D|
-| Muneeb ur Rahman |023-25-0075| BSCS-X|
+| Muneeb ur Rahman |023-25-0075| BSCS-D|
 
----
 
 # Purpose of the System
 
@@ -94,7 +93,6 @@ This package handles database operations and business logic.
 - Report generation
 - SQL query execution
 
----
 
 ## 3. UI Package (`ui`)
 
