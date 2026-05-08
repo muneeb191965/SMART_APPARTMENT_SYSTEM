@@ -6,8 +6,6 @@
 **Project Type:** Semester Group Project  
 **Technology Used:** Java, Swing GUI, JDBC, MySQL  
 
----
-
 # Project Description
 
 The Apartment Management System is a Java desktop application developed to simplify apartment and resident management for property owners and building administrators.
