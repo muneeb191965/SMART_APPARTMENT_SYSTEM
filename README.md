@@ -137,9 +137,7 @@ private double rent;
 public double getRent() {
     return rent;
 }
-```
 
----
 
 ## Inheritance
 
